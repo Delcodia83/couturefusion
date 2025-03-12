@@ -1,0 +1,1 @@
+{"routers":{"cloudinary":{"name":"cloudinary","version":"2025-03-12T03:48:14","disableAuth":false},"admin_auth":{"name":"admin_auth","version":"2025-03-12T04:51:42.432000Z","disableAuth":false},"payment":{"name":"payment","version":"2025-03-12T04:20:22.600000Z","disableAuth":false},"firebase_test":{"name":"firebase_test","version":"2025-03-12T02:05:22","disableAuth":false}}}
