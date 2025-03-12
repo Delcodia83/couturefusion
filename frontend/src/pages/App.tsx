@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NetlifyRedirects } from "components/NetlifyRedirects";
 import { useAppInit } from "../utils/appInit";
 import { Navbar } from "components/Navbar";
 import { HeroSection } from "components/HeroSection";
@@ -47,6 +48,7 @@ export default function App() {
   // Show home page content only if we're on the home page
   return (
     <div className="min-h-screen">
+      <NetlifyRedirects />
       <Toaster />
       <Navbar transparent={isHomePage} />
       

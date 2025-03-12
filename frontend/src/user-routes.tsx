@@ -7,6 +7,7 @@ import { RouteObject } from "react-router";
 import { UserGuard } from "app";
 
 
+const AdminAccess = lazy(() => import("./pages/AdminAccess.tsx"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard.tsx"));
 const AdminInit = lazy(() => import("./pages/AdminInit.tsx"));
 const AdminSettings = lazy(() => import("./pages/AdminSettings.tsx"));
@@ -38,6 +39,8 @@ const TailorProfile = lazy(() => import("./pages/TailorProfile.tsx"));
 
 export const userRoutes: RouteObject[] = [
 
+	{ path: "/admin-access", element: <UserGuard><AdminAccess /></UserGuard>},
+	{ path: "/adminaccess", element: <UserGuard><AdminAccess /></UserGuard>},
 	{ path: "/admin-dashboard", element: <UserGuard><AdminDashboard /></UserGuard>},
 	{ path: "/admindashboard", element: <UserGuard><AdminDashboard /></UserGuard>},
 	{ path: "/admin-init", element: <UserGuard><AdminInit /></UserGuard>},
